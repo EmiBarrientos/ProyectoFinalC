@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "estructuras.h"
 #include <time.h>
+#include "mock.h"
 
 
 int main()
