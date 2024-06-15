@@ -31,9 +31,25 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Estructuras.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Estructuras.h" />
+		<Unit filename="clientes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clientes.h" />
+		<Unit filename="domicilios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="domicilios.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="mock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mock.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
