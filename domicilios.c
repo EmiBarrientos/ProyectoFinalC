@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+/*
 
 stDomicilio CargaUnDomicilio()
 {
@@ -36,4 +36,4 @@ int CargaDomicilios(stDomicilio a[],int v,int dim){
     }
         return v;
 
-}
+}*/

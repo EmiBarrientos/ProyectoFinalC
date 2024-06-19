@@ -1,13 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "estructuras.h"
 #include <time.h>
+#include <ctype.h>
+#include <string.h>
+#include "estructuras.h"
+#include "clientes.h"
 #include "mock.h"
 
 
-int main()
-{
-    printf("Hello world!\n");
+int main(){
+
+
+
+
+}
+
+/***
+********************************************************************************************************************
+ printf("Hello world!\n");
     srand(time(NULL));
 
     stMovimientos unMovimiento;
@@ -43,4 +53,35 @@ int main()
 
     printf("\n Goodbye world!\n");
     return 0;
+
+
+    ////********************************************************************************************************
+
+  char palabr[20];
+    printf("ingrese una palavra");
+    fflush(stdin);
+    gets(palabr);
+
+
+
+
+    int i=0;
+    int flag=0;
+    while(!flag && i<strlen(palabr)){
+        if(isdigit(palabr[i])){
+            flag=1;
+           }
+        i++;
+
+    }
+    printf("la palabra tiene un digito? %d ",flag);
+    printf("el digito esta en %d ",i);
+
+
+
+    return 0;
+
+
+
 }
+**/
