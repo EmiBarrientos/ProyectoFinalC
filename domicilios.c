@@ -1,39 +1,40 @@
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
+#define DIM 100
+#define ESC 27
+#include <clientes.h>
 
 
+int ValidarProv(char dato[]){
 
-stDomicilio CargaUnDomicilio()
-{
-    stDomicilio a;
-    printf("Carga una calle \n");
-    fflush(stdin);
-    gets(a.calle);
-    printf("Carga nro \n");
-    scanf(&a.nro);
-    printf("Ingrese una localidad\n");
-    fflush(stdin);
-    gets(a.localidad);
-    printf("Carga una provincia \n");
-    fflush(stdin);
-    gets(a.provincia);
-    printf("Carga un codigo postal \n");
-    scanf(&a.cpos);
+    int flag=0;
+    int i=0;
+    char provincias[][23]={"Buenos aires","Catamarca","Chaco","Chubut","Cordoba","Corrientes","Entre Rios","Formosa","Jujuy","La Pampa","La rioja",
+    "Mendoza","Misiones","Neuquen","Rio negro","Salta","San Juan","San Luis","Santa Cruz","Santa Fe","Santiago del Estero",
+    "Tierra del Fuego","Tucuman"};
+    while( flag==0 && i<22){
+       if (ValidarProva[i]==dato){
+        flag=1;
+       }
+        i++;
 
-    return a;
+    }
+return flag;
+}
+void GetProvRand(char Provincia[]){
+
+ char provincias [][23]={"Buenos aires","Catamarca","Chaco","Chubut","Cordoba","Corrientes","Entre Rios","Formosa","Jujuy","La Pampa","La rioja",
+    "Mendoza","Misiones","Neuquen","Rio negro","Salta","San Juan","San Luis","Santa Cruz","Santa Fe","Santiago del Estero",
+    "Tierra del Fuego","Tucuman"};
+    strcpy(provincia, provincias[rand()%(sizeof(provincias)/23)]);
 
 }
-int CargaDomicilios(stDomicilio a[],int v,int dim){
+void GetLocRand(char Localidad[]){
 
-    char opcion=0;
-    while(v<dim && opcion!=ESC){
-        system("cls");
-        a[v]=CargaUnDomicilio();
-        v++;
-        printf("\nPresione una tecla para continuar o ESC para salir");
-        opcion=getch();
-    }
-        return v;
 
-}*/
+ char localidades[][]={"Moron","Palermo","Recoleta","belgrano","Capilla del Monte","Rio Cuarto","Alta Gracia","Villa Maria",
+ "Villa Mercedes","La Punta","Cameron","Rio Grande","San Sebastian","San Rafael","Maipu","Luja de Cuyo","Godoy Cruz",}
+
+}
