@@ -9,11 +9,19 @@
 
 
 int main(){
-         /// 01234567891234567
-char dni[23]="w12ea678asdas123";
-//printf("el dni es valido? %s",validarNum(dni)? "esValido":"noEsValido");
-///stCliente newCliente=cargaUnCliente();
-///muestraUnCliente(newCliente);
+
+
+
+stCliente newCliente=cargaUnCliente();
+muestraUnCliente(newCliente);
+
+
+
+}
+
+
+/***
+********************************************************************************************************************
 
 for(int i=0;i<strlen(dni);i++){
     if(isdigit(dni[i])){
@@ -21,12 +29,6 @@ for(int i=0;i<strlen(dni);i++){
     }
 
 }
-
-}
-
-
-/***
-********************************************************************************************************************
 
   stCliente arrayCliente[20];
 

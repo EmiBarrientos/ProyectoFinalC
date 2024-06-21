@@ -85,12 +85,12 @@ stCliente cargaUnCliente(){
         gets(palabra);
 
     }
-
     strcpy(cliente.telefono,palabra);
 
     printf("ingrese calle del cliente: \n");
     fflush(stdin);
     gets(palabra);
+
 
     while(validaPalabra(palabra)){
         system("cls");
@@ -103,6 +103,23 @@ stCliente cargaUnCliente(){
 
     }
     strcpy(cliente.domicilio.calle,palabra);
+
+
+    printf("ingrese nro de calle del cliente: \n");
+    fflush(stdin);
+    gets(palabra);
+
+    while(!validarNum(palabra)){
+        system("cls");
+        printf("Datos invalidos, intente nuevamente\n");
+        system("pause");
+        system("cls");
+        printf("Ingrese nro calle del cliente: \n");
+        fflush(stdin);
+        gets(palabra);
+
+    }
+    strcpy(cliente.domicilio.nro,palabra);
 
 
     printf("ingrese Localidad del cliente: \n");
@@ -141,7 +158,7 @@ stCliente cargaUnCliente(){
     fflush(stdin);
     gets(palabra);
 
-    while(validaPalabra(palabra)){
+    while(!validarNum(palabra)){
         system("cls");
         printf("Datos invalidos, intente nuevamente\n");
         system("pause");
@@ -178,11 +195,11 @@ void muestraUnCliente(stCliente cliente){
 
 
 
-int validaPalabra(char palabra[]){      ///Devuelve 0 si la palabra es valida
-    int palabraValida=0;                ///         1 si la palabra es invalida
+int validaPalabra(char palabra[]){                ///Devuelve 0 si la palabra es valida
+    int palabraValida=0;                          ///         1 si la palabra es invalida
     int flag=0;
     int i=0;
-    while(flag==0 && i<strlen(palabra)){///
+    while(flag==0 && i<strlen(palabra)){           ///
         if(isdigit(palabra[i])){
             palabraValida =1;
             flag=1;
@@ -193,9 +210,9 @@ return palabraValida;
 }
 
 
-int validarDni(char dni[]){ ///devuelve 1 si el dni es valido en
-    int esValido=1;         ///en tamaño y en ser todo numerico
-    if(strlen(dni)!=8){
+int validarDni(char dni[]){                     ///devuelve 1 si el dni es valido en
+    int esValido=1;                             ///en tamaño y en ser todo numerico
+    if(strlen(dni)<7 || strlen(dni)>8){
         esValido=0;
     }
     if(!validarNum(dni)){
@@ -207,12 +224,12 @@ return esValido;
 }
 
 int validarNum(char num[])
-{                                           /// devuelve 0 si el dni tiene una letra
-    int esValido=0;                         ///          1 si no tiene letra
+{                                           /// devuelve 0 (false)si el dni tiene una letra
+    int esValido=1;                         ///          1 (true)si no tiene letra
     int i=0;                                ///
-    while(esValido==0 && i<strlen(num)){
-        if(isdigit(num[i])){
-            esValido=1;
+    while(esValido==1 && i<strlen(num)){
+        if(!isdigit(num[i])){
+            esValido=0;
         }
         i++;
     }
