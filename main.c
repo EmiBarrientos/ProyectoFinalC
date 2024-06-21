@@ -3,20 +3,42 @@
 #include <time.h>
 #include <ctype.h>
 #include <string.h>
-#include "estructuras.h"
+#include "movimientos.h"
 #include "clientes.h"
 #include "mock.h"
 
 
 int main(){
 
+char dni[20];
+printf("dni: %s",dni);
 
 
 
 }
 
+
 /***
 ********************************************************************************************************************
+
+for(int i=0;i<strlen(dni);i++){
+    if(isdigit(dni[i])){
+        printf("soy un digito y estoy en la posicion %d\n",i);
+    }
+
+}
+
+stCliente newCliente=cargaUnCliente();
+muestraUnCliente(newCliente);
+
+  stCliente arrayCliente[20];
+
+  int vClientes=0;
+   vClientes=cargaArrayCliente(arrayCliente,vClientes, 20);
+
+
+
+
  printf("Hello world!\n");
     srand(time(NULL));
 
@@ -55,7 +77,7 @@ int main(){
     return 0;
 
 
-    ////********************************************************************************************************
+  ********************************************************************************************************
 
   char palabr[20];
     printf("ingrese una palavra");
@@ -68,7 +90,7 @@ int main(){
     int i=0;
     int flag=0;
     while(!flag && i<strlen(palabr)){
-        if(isdigit(palabr[i])){
+        if(isdigit(palabr[i])){         /// is digit devuelve 1 si hay un numero, va comparando de 1 en 1, si no hay numero devuelve 0
             flag=1;
            }
         i++;

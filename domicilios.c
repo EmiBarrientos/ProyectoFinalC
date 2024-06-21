@@ -1,13 +1,10 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
 #define DIM 100
 #define ESC 27
 #include <clientes.h>
-
-
-
-
 
 
 int ValidarProv(char dato[]){

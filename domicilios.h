@@ -1,4 +1,4 @@
-#ifndef DOMICILIOS_H_INCLUDED
+/*#ifndef DOMICILIOS_H_INCLUDED
 #define DOMICILIOS_H_INCLUDED
 
 
@@ -22,3 +22,4 @@ stDomicilio CargaUnDomicilio();
 int CargaDomicilios(stDomicilio a[],int v,int dim);
 
 #endif // DOMICILIOS_H_INCLUDED
+*/
