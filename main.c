@@ -10,10 +10,8 @@
 
 int main(){
 
-
-
-stCliente newCliente=cargaUnCliente();
-muestraUnCliente(newCliente);
+char dni[20];
+printf("dni: %s",dni);
 
 
 
@@ -29,6 +27,9 @@ for(int i=0;i<strlen(dni);i++){
     }
 
 }
+
+stCliente newCliente=cargaUnCliente();
+muestraUnCliente(newCliente);
 
   stCliente arrayCliente[20];
 

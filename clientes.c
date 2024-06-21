@@ -303,3 +303,193 @@ int validarEmail(char email[]){    /// devuelve 1 si el email es valido
 return flag;
 }
 
+stCliente modificaCliente(stCliente cliente){
+
+    stCliente aux=cliente;
+    char palabraAux[30];
+    int opcion;
+    system("pause");
+    system("cls");
+    do{
+        printf("que campo desea modificar?\n");
+        printf("1:Nombre         \n");
+        printf("2:Apellido       \n");
+        printf("3:DNI            \n");
+        printf("4:Telefono          \n");
+        printf("5:Email       \n");
+        printf("6:      \n");
+
+        scanf("%d", &opcion);
+        system("cls");
+
+            switch(opcion){
+                case 1:
+                    printf("Nombre:         \n");
+                    fflush(stdin);
+                    gets(palabraAux);
+                    while(validaPalabra(palabraAux)){
+                            printf("datos invalidos, intente nuevamente\n");    ///
+                            system("pause");
+                            system("cls");
+                            printf("ingrese el nombre del cliente: \n");
+                            fflush(stdin);
+                            gets(palabraAux);
+                    }
+
+                    strcpy(cliente.nombre,palabraAux);
+                    cliente.apellido=aux.apellido;
+                    cliente.dni=aux.dni;
+                    cliente.nroCliente=aux.nroCliente;
+                    cliente.telefono=aux.telefono;
+                    cliente.domicilio.calle=aux.domicilio.calle;
+                    cliente.domicilio.localidad=aux.domicilio.localidad;
+                    cliente.domicilio.cpos=aux.domicilio.cpos;
+                    cliente.domicilio.nro=aux.domicilio.nro;
+                    cliente.domicilio.provincia=aux.domicilio.provincia;
+
+                    system("pause");
+                    system("cls");
+                    break;
+
+                case 2:
+
+                    printf("Apellido:         \n");
+                    fflush(stdin);
+                    gets(palabraAux);
+                    while(!validarNum(palabraAux)){
+                            printf("datos invalidos, intente nuevamente\n");    ///
+                            system("pause");
+                            system("cls");
+                            printf("ingrese el apellido del cliente: \n");
+                            fflush(stdin);
+                            gets(palabraAux);
+                    }
+                    strcpy(cliente.apellido,palabraAux);
+
+                    cliente.nombre=aux.nombre;
+                    cliente.dni=aux.dni;
+                    cliente.nroCliente=aux.nroCliente;
+                    cliente.telefono=aux.telefono;
+                    cliente.domicilio.calle=aux.domicilio.calle;
+                    cliente.domicilio.localidad=aux.domicilio.localidad;
+                    cliente.domicilio.cpos=aux.domicilio.cpos;
+                    cliente.domicilio.nro=aux.domicilio.nro;
+                    cliente.domicilio.provincia=aux.domicilio.provincia;
+
+                    system("pause");
+                    system("cls");
+                    break;
+
+                case 3:
+                    printf("DNI:         \n");
+                    fflush(stdin);
+                    gets(palabraAux);
+                    while(!validarDni(palabraAux)){
+                            printf("datos invalidos, intente nuevamente\n");    ///
+                            system("pause");
+                            system("cls");
+                            printf("ingrese el nombre del cliente: \n");
+                            fflush(stdin);
+                            gets(palabraAux);
+                    }
+
+
+                    strcpy(cliente.dni,palabraAux);
+
+                    cliente.nombre=aux.nombre;
+                    cliente.apellido=aux.apellido;
+                    cliente.nroCliente=aux.nroCliente;
+                    cliente.telefono=aux.telefono;
+                    cliente.domicilio.calle=aux.domicilio.calle;
+                    cliente.domicilio.localidad=aux.domicilio.localidad;
+                    cliente.domicilio.cpos=aux.domicilio.cpos;
+                    cliente.domicilio.nro=aux.domicilio.nro;
+                    cliente.domicilio.provincia=aux.domicilio.provincia;
+
+                    system("pause");
+                    system("cls");
+                    break;
+                case 5:
+
+                    printf("Telefono:         \n");
+                    fflush(stdin);
+                    gets(palabraAux);
+                    while(!validarNum(palabra)){
+                            printf("datos invalidos, intente nuevamente\n");    ///
+                            system("pause");
+                            system("cls");
+                            printf("ingrese el nombre del cliente: \n");
+                            fflush(stdin);
+                            gets(palabraAux);
+                    }
+
+                    strcpy(cliente.telefono,palabraAux);
+
+                    cliente.nombre=aux.nombre;
+                    cliente.apellido=aux.apellido;
+                    cliente.nroCliente=aux.nroCliente;
+                    cliente.dni=aux.dni;
+                    cliente.domicilio.calle=aux.domicilio.calle;
+                    cliente.domicilio.localidad=aux.domicilio.localidad;
+                    cliente.domicilio.cpos=aux.domicilio.cpos;
+                    cliente.domicilio.nro=aux.domicilio.nro;
+                    cliente.domicilio.provincia=aux.domicilio.provincia;
+
+                    system("pause");
+                    system("cls");
+                    break;
+                case 6:
+
+                    printf("Email:         \n");
+                    fflush(stdin);
+                    gets(palabraAux);
+                    while(!validarNum(palabra)){
+                            printf("datos invalidos, intente nuevamente\n");    ///
+                            system("pause");
+                            system("cls");
+                            printf("ingrese el nombre del cliente: \n");
+                            fflush(stdin);
+                            gets(palabraAux);
+                    }
+
+                    strcpy(cliente.email,palabraAux);
+                    cliente.nombre=aux.nombre;
+                    cliente.apellido=aux.apellido;
+                    cliente.nroCliente=aux.nroCliente;
+                    cliente.dni=aux.dni;
+                    cliente.domicilio.calle=aux.domicilio.calle;
+                    cliente.domicilio.localidad=aux.domicilio.localidad;
+                    cliente.domicilio.cpos=aux.domicilio.cpos;
+                    cliente.domicilio.nro=aux.domicilio.nro;
+                    cliente.domicilio.provincia=aux.domicilio.provincia;
+
+                    system("pause");
+                    system("cls");
+                    break;
+
+                case 7:
+
+                    printf("ingrese nombre y apellido\n");
+                    fflush(stdin);
+                    gets(alumno.nombreYapellido);
+                    printf("ingrese edad\n");
+                    scanf("%d",&alumno.edad);
+                    printf("ingrese anio que cursa\n");
+                    scanf("%d",&alumno.anio);
+                    alumno.legajo=aux.legajo;
+                    system("pause");
+                    system("cls");
+                    break;
+
+                default:
+                    printf("ingrese una opcion correcta\n");
+                    system("pause");
+                    system("cls");
+                    break;
+
+            }
+    }while(opcion<0 && opcion>4);
+
+
+return alumno;
+}

@@ -98,4 +98,36 @@ void mockArchivo (char nombreArchivoMov[], char nombreArchivoCu[], int cantidad)
         movimiento.id=cuentaElementosArchivo(nombreArchivoMov)+1;
         cargarUnMovimientoArchivo(nombreArchivoMov,nombreArchivoCu,movimiento);
     }
+
+
+
+///_________________________________________________________________________________________________________________
+///Inicio mock clientes
+
+
+
+void getNombreRandom(char name[]){
+    char names[][35]={"Emiliano","Gabriel","Luciano","Agustin","Julieta","Luis",
+    "Sofia","Rodrigo","Maria","Lucia","Estela","Rocio",
+    "Lucas","Mariel","Agustina","Fernanda","Guadalupe","Esteban","Estefania","Paula","Dominic",
+    "Efraim","Nicolas","Ignacio","Geraldine","Yair","Ezequiel","Mia","Isabela","Antonella","Luz","Camila","Leonel","Enzo","Raul"};
+
+    strcpy(name,names[rand()%sizeof(names)/35]);
 }
+
+
+
+void getApellidoRandom(char apellido[]){
+    char apellidos[][33]={"Rodriguez","Martinez","Gomez","Lopez","Perez","Diaz",
+    "Domingues","Guix","Gonzales","Peralta","Argento","Messi",
+    "De Paul","Fernandez","Alvarez","Paredes","Otamendi","Estebanez","Montiel","Palacios","Molina",
+    "Aguilar","Aguero","Di Maria","Nuñez","Tintez","Florez","Linares","Rocuzzo","Ardiles","Leccese","Cervi","Ramirez"};
+
+    strcpy(apellido,apellidos[rand()%sizeof(apellidos)/33]);
+}
+
+void getDniRandom(char dni[]){
+    strcpy(dni,(rand()%50400673)+10567123);
+
+}
+

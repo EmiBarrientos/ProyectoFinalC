@@ -9,6 +9,8 @@ void idCuenta(stMovimientos* M, char nombreArchivoCu[]);
 void eliminado(stMovimientos* M);
 void importeydetalle(stMovimientos* M);
 void mockArchivo (char nombreArchivoMov[], char nombreArchivoCu[], int cantidad);
-
+void getNombreRandom(char name[]);
+void getApellidoRandom(char apellido[]);
+void getDniRandom(char dni[]);
 
 #endif // MOCK_H_INCLUDED
