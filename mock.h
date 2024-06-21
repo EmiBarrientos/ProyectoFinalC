@@ -2,6 +2,7 @@
 #define MOCK_H_INCLUDED
 #include "movimientos.h"
 #include "cuenta.h"
+#include "clientes.h"
 
 void getDayMonthYeard(stMovimientos* M);
 void idCuenta(stMovimientos* M, char nombreArchivoCu[]);

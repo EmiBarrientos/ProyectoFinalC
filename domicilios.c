@@ -1,8 +1,8 @@
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
+
 
 stDomicilio CargaUnDomicilio()
 {
