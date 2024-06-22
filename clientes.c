@@ -307,17 +307,23 @@ stCliente modificaCliente(stCliente cliente){
 
     stCliente aux=cliente;
     char palabraAux[30];
+    char control='s';
     int opcion;
-    system("pause");
-    system("cls");
+
+
     do{
-        printf("que campo desea modificar?\n");
+        system("pause");
+        system("cls");
+        printf("\t ¿Que campo desea modificar?\n");
         printf("1:Nombre         \n");
         printf("2:Apellido       \n");
         printf("3:DNI            \n");
         printf("4:Telefono          \n");
         printf("5:Email       \n");
-        printf("6:      \n");
+        printf("6:Modificar Domicilio    \n");
+        printf("7:modificar todo   \n");
+        printf("8:salir    \n\n");
+        printf("******************************************\n");
 
         scanf("%d", &opcion);
         system("cls");
@@ -409,7 +415,7 @@ stCliente modificaCliente(stCliente cliente){
                     system("pause");
                     system("cls");
                     break;
-                case 5:
+                case 4:
 
                     printf("Telefono:         \n");
                     fflush(stdin);
@@ -438,7 +444,7 @@ stCliente modificaCliente(stCliente cliente){
                     system("pause");
                     system("cls");
                     break;
-                case 6:
+                case 5:
 
                     printf("Email:         \n");
                     fflush(stdin);
@@ -467,22 +473,70 @@ stCliente modificaCliente(stCliente cliente){
                     system("cls");
                     break;
 
-                case 7:
+                case 6:
+                    modificaDomicilio(cliente);
 
-                    printf("ingrese nombre y apellido\n");
-                    fflush(stdin);
-                    gets(alumno.nombreYapellido);
-                    printf("ingrese edad\n");
-                    scanf("%d",&alumno.edad);
-                    printf("ingrese anio que cursa\n");
-                    scanf("%d",&alumno.anio);
-                    alumno.legajo=aux.legajo;
                     system("pause");
                     system("cls");
                     break;
 
+                case 7:
+
+                    cliente=cargaUnCliente();
+                    system("pause");
+                    system("cls");
+                    break;
                 case 8:
-                     printf("Calle:         \n");
+
+
+                    system("pause");
+                    system("cls");
+                    break;
+
+                default:
+                    printf("Opcion incorrecta, ingrese una opcion valida\n");
+                    system("pause");
+                    system("cls");
+                    break;
+
+            }
+
+            printf("Desea modificar otro dato? s para continuar\n");
+            fflush(stdin);
+            scanf("%c",&control);
+
+
+    }while((opcion<0 && opcion>4)||control=='s');
+
+
+return cliente;
+}
+
+stcliente modificaDomicilio(stCliente){
+    stCliente aux=cliente;
+    char palabraAux[30];
+    char control='s';
+    int opcion;
+
+    do{
+        system("pause");
+        system("cls");
+        printf("\t¿Que campo desea modificar?       \n");
+        printf("1:Calle                          \n");
+        printf("2:Localidad                      \n");
+        printf("3:Codigo postal                  \n");
+        printf("4:Provincia                      \n");
+        printf("5:Menu anterior                  \n");
+        printf("6:Terminar con modificacion    \n\n");
+        printf("******************************************\n");
+
+        scanf("%d", &opcion);
+        system("cls");
+
+            switch(opcion){
+
+                case 1:
+                    printf("Calle:         \n");
                     fflush(stdin);
                     gets(palabraAux);
                     while(!validarNum(palabra)){
@@ -510,7 +564,7 @@ stCliente modificaCliente(stCliente cliente){
                     system("cls");
                     break;
 
-                case 9:
+                case 2:
                     printf("Localidad:         \n");
                     fflush(stdin);
                     gets(palabraAux);
@@ -539,7 +593,7 @@ stCliente modificaCliente(stCliente cliente){
                     system("cls");
                     break;
 
-                case 10:
+                case 3:
                     printf("cpos:         \n");
                     fflush(stdin);
                     gets(palabraAux);
@@ -567,7 +621,7 @@ stCliente modificaCliente(stCliente cliente){
                     system("cls");
                     break;
 
-                case 11:
+                case 4:
                     printf("nro:         \n");
                     fflush(stdin);
                     gets(palabraAux);
@@ -596,7 +650,7 @@ stCliente modificaCliente(stCliente cliente){
                     system("cls");
                     break;
 
-                    case 12:
+                    case 5:
                     printf("provincia:         \n");
                     fflush(stdin);
                     gets(palabraAux);
@@ -625,6 +679,21 @@ stCliente modificaCliente(stCliente cliente){
                     system("cls");
                     break;
 
+                case 6:
+
+
+                    system("pause");
+                    system("cls");
+                    break;
+
+                case 7:
+
+
+                    system("pause");
+                    system("cls");
+                    break;
+
+
 
                 default:
                     printf("ingrese una opcion correcta\n");
@@ -633,8 +702,106 @@ stCliente modificaCliente(stCliente cliente){
                     break;
 
             }
-    }while(opcion<0 && opcion>4);
+
+            printf("Desea modificar otro dato? s para continuar\n");
+            fflush(stdin);
+            scanf("%c",&control);
 
 
-return alumno;
+    }while((opcion<0 && opcion>4)||control=='s');
+
+
+return cliente;
+
 }
+
+
+
+
+
+
+void modificaClientePorId(char nombre_Archivo[],int idCliente){
+    int flag=0;
+    stCliente c;
+    FILE *archi=fopen(nombre_Archivo,"r+b");
+    if(archi){
+        while(fread(&c,sizeof(stCliente),1,archi)>0 && !flag){
+            if(c.id==idCliente){
+                c=modificaCliente(c);
+                fseek(archi,-1*sizeof(stCliente),SEEK_CUR);
+                fwrite(&c,sizeof(stCliente),1,archi);
+                flag=1;
+            }
+        }
+        fclose(archi);
+    }
+}
+
+
+void modificaEstadoClientePorId(char nombre_Archivo[],int id_Cliente, int estado){
+    int flag=0;
+    stCliente c;
+    FILE *archi=fopen(nombre_Archivo,"r+b");
+    if(archi){
+        while(fread(&c,sizeof(stCliente),1,archi)>0 && !flag){
+            if(c.id==id_Cliente){
+                c.eliminado=estado;
+                fseek(archi,-1*sizeof(stCliente),SEEK_CUR);
+                fwrite(&c,sizeof(stCliente),1,archi);
+                flag=1;
+            }
+        }
+        fclose(archi);
+    }
+}
+
+
+void muestraTodosClientes(char nombre_Archivo[], int estado){
+    stCliente c;
+    FILE *archi=fopen(nombre_Archivo,"rb");
+    if(archi){
+        while(fread(&c,sizeof(stCliente),1,archi)>0){
+            muestraUnCliente(c);
+
+        }
+        fclose(archi);
+    }
+}
+
+void muestraClientePorId(char nombre_Archivo[],int idCliente){
+    int flag=0;
+    stCliente c;
+    FILE *archi=fopen(nombre_Archivo,"rb");
+    if(archi){
+        while(fread(&c,sizeof(stCliente),1,archi)>0 && !flag){
+            if(c.id==idCliente){
+                muestraUnCliente(c);
+                flag=1;
+            }
+        }
+        fclose(archi);
+    }
+}
+
+
+void cargaClienteEnArchivo(char nombreArchivo[])
+{
+    stCliente cliente;
+    FILE *archi=fopen(nombreArchivo,"ab");
+    char opcion='s';
+
+    if(archi){
+        while(opcion=='s'){
+          cliente=cargaUnCliente();
+          fwrite(&cliente,sizeof(stCliente),1,archi);
+          printf("Desea seguir cargando? s para continuar cualquier tecla para salir\n");
+          fflush(stdin);
+          scanf("%c",&opcion);
+        }
+        fclose(archi);
+    }
+
+
+}
+
+
