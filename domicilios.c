@@ -23,17 +23,28 @@ int ValidarProv(char dato[]){
     }
 return flag;
 }
+
 void GetProvRand(char Provincia[]){
 
+<<<<<<< HEAD
+    char provincias [][23]={"Buenos aires","Catamarca","Chaco","Chubut","Cordoba","Corrientes","Entre Rios","Formosa","Jujuy","La Pampa","La rioja",
+=======
  char Provincias [][23]={"Buenos aires","Catamarca","Chaco","Chubut","Cordoba","Corrientes","Entre Rios","Formosa","Jujuy","La Pampa","La rioja",
+>>>>>>> 9173097de2bc42f3cd7990bc335a53e25d4c44ff
     "Mendoza","Misiones","Neuquen","Rio negro","Salta","San Juan","San Luis","Santa Cruz","Santa Fe","Santiago del Estero",
     "Tierra del Fuego","Tucuman"};
     strcpy(Provincia, Provincias[rand()%(sizeof(Provincias)/23)]);
 
 }
+
 void GetLocRand(char Localidad[]){
 
 
+<<<<<<< HEAD
+     char localidades[][]={"Moron","Palermo","Recoleta","belgrano","Capilla del Monte","Rio Cuarto","Alta Gracia","Villa Maria",
+     "Villa Mercedes","La Punta","Cameron","Rio Grande","San Sebastian","San Rafael","Maipu","Luja de Cuyo","Godoy Cruz",}
+      strcpy(Localidad, provincias[rand()%(sizeof(localidades)/23)]);
+=======
  char Localidades[][20]={"Moron","Palermo","Recoleta","belgrano","Capilla del Monte","Rio Cuarto","Alta Gracia","Villa Maria",
  "Villa Mercedes","La Punta","Cameron","Rio Grande","San Sebastian","San Rafael","Maipu","Luja de Cuyo","Godoy Cruz","Trelew",
  "Gaiman","Comodoro Rivadabia"};
@@ -64,4 +75,5 @@ char CodigoPost[][20]={"1001","5000","4000","5700","8300","9400","9000","3500","
 "3100","3300","8300","4600","5700","9100"};
 strcpy(Cpost, CodigoPost[rand()%(sizeof(CodigoPost))/20)]);
 
+>>>>>>> 9173097de2bc42f3cd7990bc335a53e25d4c44ff
 }

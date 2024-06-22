@@ -32,5 +32,11 @@ int validaPalabra(char palabra[]);
 int validarDni(char dni[]);
 int validarNum(char dni[]);
 int validarEmail(char email[]);
+stCliente modificaCliente(stCliente cliente);
+void modificaClientePorId(char nombre_Archivo[],int id_Cliente);
+void cargaClienteEnArchivo(char nombreArchivo[]);
+
+
+
 
 #endif // CLIENTES_H_INCLUDED
