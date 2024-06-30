@@ -1,0 +1,151 @@
+# depslib dependency file v1.0
+1719183146 source:c:\users\ta_tu\documents\programacion\proyectofinal216\general.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719166157 c:\users\ta_tu\documents\programacion\proyectofinal216\general.h
+
+1719183798 source:c:\users\ta_tu\documents\programacion\proyectofinal216\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719154950 source:c:\users\ta_tu\documents\programacion\proyectofinal216\mock.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719270316 source:c:\users\ta_tu\documents\programacion\ultimoultimoultimo\proyectofinal216\general.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719253138 c:\users\ta_tu\documents\programacion\ultimoultimoultimo\proyectofinal216\general.h
+
+1719267013 source:c:\users\ta_tu\documents\programacion\ultimoultimoultimo\proyectofinal216\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719269627 source:c:\users\ta_tu\documents\programacion\ultimoultimoultimo\proyectofinal216\mock.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719309158 source:c:\users\alumno\downloads\proyectofinal216\general.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719270870 c:\users\alumno\downloads\proyectofinal216\general.h
+
+1719308661 source:c:\users\alumno\downloads\proyectofinal216\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719308104 source:c:\users\alumno\downloads\proyectofinal216\mock.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719324908 source:c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal216\general.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719324997 c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal216\general.h
+
+1719324097 source:c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal216\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719308106 source:c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal216\mock.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719361122 source:c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal25-6\general.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719348759 c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal25-6\general.h
+
+1719361215 source:c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal25-6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719350866 source:c:\users\ta_tu\desktop\el que mando emi\proyectofinal25-6\proyectofinal25-6\mock.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719789166 source:c:\users\yeco_\documents\proyectosutn2024\tp-final\proyectofinal25-6\general.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719789166 c:\users\yeco_\documents\proyectosutn2024\tp-final\proyectofinal25-6\general.h
+
+1719789166 source:c:\users\yeco_\documents\proyectosutn2024\tp-final\proyectofinal25-6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
+1719789167 source:c:\users\yeco_\documents\proyectosutn2024\tp-final\proyectofinal25-6\mock.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"general.h"
+
