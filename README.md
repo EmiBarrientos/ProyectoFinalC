@@ -12,3 +12,26 @@ Nuestra aplicacion cuenta con las funcionalidades de: Crear, modificar, eliminar
 
 version final en rama develop, la arquitectura del proyecto en la rama main, es la manera en la que trabajamos la mayor parte del proyecto.
 Espero les guste el proyecto tanto como a nosotros hacerlo!!!
+Gracias por utilizar Easy Bici 
+
+
+
+//---------------------------------------------------------------Englsh version of README--------------------------------------------------------------------------//
+
+Final project of the 1st quarter UTN-2024 Made with love by Agustin Malagutti, Luciano Fraticelli, Julieta Gerez and Emiliano Barrientos. Made with the c language.
+
+To use, first you must add the Mock.h, Mock.c, general.c, general.h libraries.
+
+You must enter a password (1234) to access the main menu of the program. After being executed, you will see the main menu, choose one of the options and it will open the chosen submenu with its respective options.
+
+In this case, the project has a fictitious database, creating data randomly and adding it to the files.
+
+We use an intuitive interface and it should not represent problems at the time of the understanding of the user.
+
+Our application has the following functionalities: Create, modify, delete and show clients; Create, modify, delete and show accounts; and Create, modify, delete and show Movements.
+
+final version in develop branch, the architecture of the project in the main branch, is the way we work most of the project.
+I hope you like the project as much as we do!!!
+Thanks for using Easy Bici 
+
+Translated with DeepL.com (free version)
