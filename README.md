@@ -12,7 +12,7 @@ Nuestra aplicacion cuenta con las funcionalidades de: Crear, modificar, eliminar
 
 version final en rama develop, la arquitectura del proyecto en la rama main, es la manera en la que trabajamos la mayor parte del proyecto.
 Espero les guste el proyecto tanto como a nosotros hacerlo!!!
-Gracias por utilizar Easy Bici 
+Gracias por utilizar Easy Bici!!! 
 
 
 
@@ -32,6 +32,6 @@ Our application has the following functionalities: Create, modify, delete and sh
 
 final version in develop branch, the architecture of the project in the main branch, is the way we work most of the project.
 I hope you like the project as much as we do!!!
-Thanks for using Easy Bici 
+Thanks for using Easy Bici!!!
 
-Translated with DeepL.com (free version)
+
