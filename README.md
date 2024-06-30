@@ -16,7 +16,7 @@ Gracias por utilizar Easy Bici!!!
 
 
 
-//---------------------------------------------------------------Englsh version of README--------------------------------------------------------------------------//
+//--------------------------------------------------Englsh version of README-----------------------------------------------------------------//
 
 Final project of the 1st quarter UTN-2024 Made with love by Agustin Malagutti, Luciano Fraticelli, Julieta Gerez and Emiliano Barrientos. Made with the c language.
 
